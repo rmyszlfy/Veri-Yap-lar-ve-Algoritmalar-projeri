@@ -1,0 +1,38 @@
+## Merge Sort Aşamaları
+
+Verilen dizi: [16, 21, 11, 8, 12, 22]
+
+### 1. Böl ve Birleştir (Divide and Conquer)
+
+1. Adım: Diziyi ikiye böl
+   - [16, 21, 11] ve [8, 12, 22]
+
+2. Adım: Her iki alt diziyi tekrar ikiye böl
+   - [16, 21] ve [11]
+   - [8, 12] ve [22]
+
+3. Adım: Tekrar ikiye böl
+   - [16] ve [21]
+   - [8] ve [12]
+
+### 2. Birleştir (Merge)
+
+1. Adım: Küçük dizileri birleştir
+   - [16] ve [21] -> [16, 21]
+   - [8] ve [12] -> [8, 12]
+
+2. Adım: Birleştirilen dizileri birleştir
+   - [16, 21] ve [11] -> [11, 16, 21]
+   - [8, 12] ve [22] -> [8, 12, 22]
+
+3. Adım: Son birleştirme işlemi
+   - [11, 16, 21] ve [8, 12, 22] -> [8, 11, 12, 16, 21, 22]
+
+### Big-O Gösterimi
+
+Merge Sort algoritmasının Big-O notasyonu: `O(n log n)`
+
+### Özet
+
+Merge Sort, diziyi tekrar tekrar ikiye böler ve ardından bu alt dizileri sıralı şekilde birleştirir. Bu süreç `O(nlogn)` zaman karmaşıklığı ile çalışır ve oldukça verimlidir.
+
